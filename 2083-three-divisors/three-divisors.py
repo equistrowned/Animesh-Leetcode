@@ -11,7 +11,7 @@ class Solution(object):
             if n%i == 0:
                 divisors += 1
         
-        if divisors == 3:
-            return True
-        else:
-            return False
+            if divisors > 3:
+                return False
+
+        return divisors == 3
