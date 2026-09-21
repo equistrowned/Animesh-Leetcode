@@ -8,9 +8,15 @@ class Solution:
                 neg.append(num)
             else:
                 pos.append(num)
-        while len(pos)>0:
-            res.append(pos.pop(0))
-            res.append(neg.pop(0))
+        p = 0
+        n = 0
+
+        while p < len(pos):
+            res.append(pos[p])
+            res.append(neg[n])
+            p += 1
+            n += 1
+
         return res
 
         
